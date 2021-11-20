@@ -5,6 +5,17 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+<footer>
+  <a
+    href="https://github.com/Hailx12/react-weather-app"
+    target="_blank"
+    rel="noreferrer"
+  >
+    Open-source code
+  </a>
+  , by Sohaily Kerpens
+</footer>;
+
 ReactDOM.render(<App />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function

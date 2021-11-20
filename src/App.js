@@ -6,19 +6,18 @@ function App() {
   return (
     <div className="App">
       <div className="Container">
-        Weather App
         <Weather />
-        <footer>
-          <a
-            href="https://github.com/Hailx12/react-weather-app"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Open-source code
-          </a>
-          , by Sohaily Kerpens
-        </footer>
       </div>
+      <footer>
+        <a
+          href="https://github.com/Hailx12/react-weather-app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Open-source code
+        </a>
+        , by Sohaily Kerpens
+      </footer>
     </div>
   );
 }
