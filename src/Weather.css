@@ -47,6 +47,11 @@
   font-size: 20px;
 }
 
+.Weather canvas {
+  margin: 5px auto;
+  margin-right: 10px;
+}
+
 .Weather .current-temp {
   font-size: 40px;
   color: #142d4c;
