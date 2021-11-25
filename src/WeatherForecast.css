@@ -1,0 +1,32 @@
+.WeatherForecast {
+  text-align: center;
+}
+
+.WeatherForecast .col-6 {
+  color: #385170;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: left;
+  line-height: 2;
+}
+
+.WeatherForecast .temp-max {
+  color: #142d4c;
+  margin-right: 5px;
+  line-height: 2.5;
+}
+
+.WeatherForecast .temp-min {
+  opacity: 0.5;
+  color: #142d4c;
+  margin-left: 5px;
+  line-height: 2.5;
+}
+
+.WeatherForecast .card {
+  margin: 7px;
+}
+
+.WeatherForecast .card-body {
+  padding: 5px;
+}
