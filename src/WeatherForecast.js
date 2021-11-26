@@ -17,34 +17,32 @@ export default function WeatherForecast(props) {
     setLoaded(true);
   }
 
-  if (loaded) {
-    return (
-      <div className="WeatherForecast">
-        <div className="card">
-          <div className="card-body">
-            <div className="row">
-              {forecast.map(function (dailyForecast, index) {
-                if (index < 6) {
-                  return (
-                    <div className="forecast-day" key={index}>
-                      <WeatherForecastDay data={dailyForecast} />
-                    </div>
-                  );
-                } else {
-                  return null;
-                }
-              })}
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  } else {
+  function load() {
     let apiKey = "bc77907b0e11a419a6d57d1e95e42bea";
     let lat = props.coords.lat;
     let lon = props.coords.lon;
     let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
+  }
+
+  if (loaded) {
+    return (
+      <div className="WeatherForecast">
+        {forecast.map(function (dailyForecast, index) {
+          if (index < 5) {
+            return (
+              <div className="col" key={index}>
+                <WeatherForecastDay data={dailyForecast} />
+              </div>
+            );
+          } else {
+            return null;
+          }
+        })}
+      </div>
+    );
+  } else {
+    load();
 
     return null;
   }
