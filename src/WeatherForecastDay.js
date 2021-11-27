@@ -31,14 +31,15 @@ export default function WeatherForecastDay(props) {
     <div className="WeatherForecastDay">
       <div className="card">
         <div className="card-body">
-          <div className="row"></div>
-          <div className="col-6">{day()}</div>
-          <div className="col-2">
-            <WeatherIcon code={props.data.weather[0].icon} size={36} />
-          </div>
-          <div className="col-4">
-            <span className="temp-max">{maxTemp()}</span>|
-            <span className="temp-min">{minTemp()}</span>
+          <div className="row">
+            <div className="col-6">{day()}</div>
+            <div className="col-2">
+              <WeatherIcon code={props.data.weather[0].icon} size={36} />
+            </div>
+            <div className="col-4">
+              <span className="temp-max">{maxTemp()}</span>|
+              <span className="temp-min">{minTemp()}</span>
+            </div>
           </div>
         </div>
       </div>
